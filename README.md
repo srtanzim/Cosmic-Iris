@@ -1,15 +1,15 @@
-This is the source repository for Sky Map. You should see the following
+This is the source repository for Cosmic Iris. You should see the following
 two directories:
  * app: Application source
  * tools: Source for generating binary data used by the app.
 
-To build SkyMap, you can use Android Developer Studio or Gradle.  Begin by
-by creating a `local.properties` file containing the location of your
+To build CosmicIris, we used Android Developer Studio and Gradle.  We beagan by
+by creating a `local.properties` file containing the location of our
 Android installation:
 
     sdk.dir=<path to your SDK>
 
-Android Developer Studio can create this for you.  You can regenerate the datafiles and
+Android Developer Studio can created this for us.  We regenerated the datafiles and
 rebuild everything with the `build_skymap.sh` script.
 
 ## Building a debug apk
@@ -21,7 +21,7 @@ From the root directory execute
 The apk can be found in `app/build/outputs/apk/`.
 
 ## Building a release apk
-(Sky Map team only)
+(Cosmic_Iris team only)
 
 Create a file in the app directory called
 `no-checkin.properties` with appropriate values for the
@@ -48,7 +48,7 @@ The apk can be found in `app/build/outputs/apk/`.
 ## Regenerating the star data files
 
 The data files need munging to take into account the string ID files in the generated `R` file.  Information on
-how to do this is in the tools directory.  If you update any strings in Sky Map it's quite likely you'll
+how to do this is in the tools directory.  If you update any strings in Cosmic Iris it's quite likely you'll
 have to regenerate the star data files or the app will crash or put incorrect labels on things.
 
 # Code and Language Contributions
